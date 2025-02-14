@@ -1,0 +1,130 @@
+[gd_scene load_steps=11 format=3 uid="uid://dy68xpub8wltm"]
+
+[ext_resource type="Texture2D" uid="uid://crvfqpy0t55dk" path="res://Assets/warthog-body.png" id="1_70lrj"]
+[ext_resource type="Texture2D" uid="uid://cyo5adrexj2qi" path="res://Assets/warthog-turret.png" id="2_p77l6"]
+[ext_resource type="Texture2D" uid="uid://ck2at1hymlp2p" path="res://Assets/warthog-wheel.png" id="3_1p1ax"]
+[ext_resource type="Script" path="res://warthog_turret.gd" id="4_5442d"]
+[ext_resource type="Script" path="res://warthog_wheel.gd" id="5_xsq5c"]
+[ext_resource type="Script" path="res://warthog_wheel_2.gd" id="6_qwbf8"]
+[ext_resource type="Script" path="res://warthog_wheel_3.gd" id="7_3jrtp"]
+[ext_resource type="Script" path="res://warthog_wheel_4.gd" id="8_sp7n3"]
+
+[sub_resource type="GDScript" id="GDScript_t12np"]
+script/source = "extends CharacterBody2D
+
+@export var warthog: CharacterBody2D
+const accel = 10
+const r_accel = -5
+var e_bleed = Vector2.ZERO
+var speed = 0
+var max_speed = 750
+var r_speed = 0
+var r_max_speed = -300
+var rng = RandomNumberGenerator.new()
+
+func _physics_process(delta: float) -> void:
+	var direction = 0
+	var angular_speed = 5
+	if Input.is_action_pressed(\"ui_left\"):
+		direction = -1
+	if Input.is_action_pressed(\"ui_right\"):
+		direction = 1
+	
+
+	rotation += angular_speed * (velocity.length() / max_speed) * direction * delta
+
+	if Input.is_action_pressed(\"ui_up\"):
+		if speed < max_speed:
+			speed += accel
+			get_tree().create_timer(rng.randf_range(0.6,1.7)).timeout
+	if speed > 20 and not Input.is_action_pressed(\"ui_up\"):
+		speed = 0
+	
+	if Input.is_action_pressed(\"ui_down\"):
+		if r_speed > r_max_speed:
+			r_speed += r_accel
+			get_tree().create_timer(rng.randf_range(0.6,1.7)).timeout
+	if r_speed > -20 and not Input.is_action_pressed(\"ui_down\"):
+		r_speed = 0
+	if Input.is_action_pressed(\"ui_down\"):
+		velocity = Vector2(1,0).rotated(rotation) * (r_speed/2)
+		e_bleed = velocity/100 * -1
+	
+	if Input.is_action_pressed(\"ui_up\"):
+		velocity = Vector2(1,0).rotated(rotation) * (speed/2)
+		e_bleed = velocity/100 * -1
+	if velocity.x > Vector2.AXIS_X and not Input.is_action_pressed(\"ui_up\"):
+		velocity.x += e_bleed.x
+		if velocity.x < 10.00000:
+			velocity.x = 0
+	if velocity.y > Vector2.AXIS_Y and not Input.is_action_pressed(\"ui_up\"):
+		velocity.y += e_bleed.y
+		if velocity.y < 10.00000:
+			velocity.y = 0
+	if velocity.x < Vector2.AXIS_X and not Input.is_action_pressed(\"ui_down\"):
+		velocity.x += abs(e_bleed.x)
+		if velocity.x > -10.00000:
+			velocity.x = 0
+	if velocity.y < Vector2.AXIS_Y and not Input.is_action_pressed(\"ui_down\"):
+		velocity.y += abs(e_bleed.y)
+		if velocity.y > -10.00000:
+			velocity.y = 0
+	
+	position += velocity * delta
+	move_and_slide()
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s7h10"]
+size = Vector2(56, 110)
+
+[node name="Warthog" type="CharacterBody2D"]
+position = Vector2(564, 316)
+rotation = -3.14159
+script = SubResource("GDScript_t12np")
+
+[node name="Warthog_Collision" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_s7h10")
+
+[node name="Warthog-body" type="Sprite2D" parent="."]
+rotation = 3.14159
+texture = ExtResource("1_70lrj")
+
+[node name="Warthog-turret" type="Sprite2D" parent="Warthog-body"]
+position = Vector2(30, -2.66639e-06)
+rotation = -3.14159
+texture = ExtResource("2_p77l6")
+offset = Vector2(19, 0)
+script = ExtResource("4_5442d")
+
+[node name="Front-Wheels" type="Node2D" parent="Warthog-body"]
+show_behind_parent = true
+position = Vector2(-36, 0)
+rotation = -1.5708
+
+[node name="Warthog-wheel3" type="Sprite2D" parent="Warthog-body/Front-Wheels"]
+position = Vector2(-22, 0)
+texture = ExtResource("3_1p1ax")
+script = ExtResource("7_3jrtp")
+
+[node name="Warthog-wheel4" type="Sprite2D" parent="Warthog-body/Front-Wheels"]
+position = Vector2(22, 0)
+texture = ExtResource("3_1p1ax")
+script = ExtResource("8_sp7n3")
+
+[node name="Rear-Wheels" type="Node2D" parent="Warthog-body"]
+show_behind_parent = true
+position = Vector2(23, 0)
+rotation = -1.5708
+
+[node name="Warthog-wheel" type="Sprite2D" parent="Warthog-body/Rear-Wheels"]
+position = Vector2(-22, 13)
+texture = ExtResource("3_1p1ax")
+script = ExtResource("5_xsq5c")
+
+[node name="Warthog-wheel2" type="Sprite2D" parent="Warthog-body/Rear-Wheels"]
+position = Vector2(22, 13)
+texture = ExtResource("3_1p1ax")
+script = ExtResource("6_qwbf8")
+
+[node name="Warthog_Cam" type="Camera2D" parent="."]

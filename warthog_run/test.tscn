@@ -1,0 +1,527 @@
+[gd_scene load_steps=3 format=3 uid="uid://crmi60g6nl4yx"]
+
+[ext_resource type="PackedScene" uid="uid://dy68xpub8wltm" path="res://node_2d.tscn" id="1_qnm56"]
+[ext_resource type="PackedScene" uid="uid://305emp58wmjx" path="res://refrence.tscn" id="2_eq2lk"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(-23, -155)
+
+[node name="Warthog" parent="." instance=ExtResource("1_qnm56")]
+position = Vector2(558, 588)
+
+[node name="Node2D" parent="." instance=ExtResource("2_eq2lk")]
+position = Vector2(79, 100)
+
+[node name="Node2D2" parent="." instance=ExtResource("2_eq2lk")]
+position = Vector2(1144, 738)
+
+[node name="Node2D" parent="Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D2" parent="Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(802, 1165)
+
+[node name="Node2D2" parent="Node2D2/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D3" parent="Node2D2/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D" parent="Node2D2/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D4" parent="Node2D2/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D5" parent="Node2D2/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D6" parent="Node2D2/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D7" parent="Node2D2/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(813, -2622)
+
+[node name="Node2D8" parent="Node2D2/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2954, -2708)
+
+[node name="Node2D9" parent="Node2D2/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(5437, 118)
+
+[node name="Node2D2" parent="Node2D2/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D3" parent="Node2D2/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D" parent="Node2D2/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D4" parent="Node2D2/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D5" parent="Node2D2/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D6" parent="Node2D2/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D7" parent="Node2D2/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(813, -2622)
+
+[node name="Node2D8" parent="Node2D2/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2954, -2708)
+
+[node name="Node2D10" parent="Node2D2/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(3858, 250)
+
+[node name="Node2D11" parent="Node2D2/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(6794, 1521)
+
+[node name="Node2D3" parent="Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-777, 1297)
+
+[node name="Node2D4" parent="Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D" parent="Node2D2/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D2" parent="Node2D2/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(1122, -2803)
+
+[node name="Node2D3" parent="Node2D2/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(-777, 1297)
+
+[node name="Node2D4" parent="Node2D2/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D5" parent="Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2935, 332)
+
+[node name="Node2D" parent="Node2D2/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D2" parent="Node2D2/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(802, 1165)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D4" parent="Node2D2/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D5" parent="Node2D2/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D6" parent="Node2D2/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D7" parent="Node2D2/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(813, -2622)
+
+[node name="Node2D8" parent="Node2D2/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2954, -2708)
+
+[node name="Node2D9" parent="Node2D2/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(5437, 118)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D4" parent="Node2D2/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D5" parent="Node2D2/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D6" parent="Node2D2/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D7" parent="Node2D2/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(813, -2622)
+
+[node name="Node2D8" parent="Node2D2/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2954, -2708)
+
+[node name="Node2D10" parent="Node2D2/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(3858, 250)
+
+[node name="Node2D11" parent="Node2D2/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(6794, 1521)
+
+[node name="Node2D3" parent="Node2D2/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(-777, 1297)
+
+[node name="Node2D4" parent="Node2D2/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(1122, -2803)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(-777, 1297)
+
+[node name="Node2D4" parent="Node2D2/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D5" parent="Node2D2/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(2233, 994)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(802, 1165)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D4" parent="Node2D2/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D5" parent="Node2D2/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D6" parent="Node2D2/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D7" parent="Node2D2/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(813, -2622)
+
+[node name="Node2D9" parent="Node2D2/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(5437, 118)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D4" parent="Node2D2/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D5" parent="Node2D2/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D6" parent="Node2D2/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D7" parent="Node2D2/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(813, -2622)
+
+[node name="Node2D8" parent="Node2D2/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2954, -2708)
+
+[node name="Node2D10" parent="Node2D2/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(3858, 250)
+
+[node name="Node2D11" parent="Node2D2/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(6794, 1521)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(-777, 1297)
+
+[node name="Node2D4" parent="Node2D2/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(1122, -2803)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(-777, 1297)
+
+[node name="Node2D4" parent="Node2D2/Node2D5/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D5" parent="Node2D2/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(823, -2338)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(802, 1165)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D4" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D5" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D6" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D7" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(813, -2622)
+
+[node name="Node2D8" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2954, -2708)
+
+[node name="Node2D9" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(5437, 118)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D4" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D5" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D6" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D7" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(813, -2622)
+
+[node name="Node2D8" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2954, -2708)
+
+[node name="Node2D10" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(3858, 250)
+
+[node name="Node2D11" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(6794, 1521)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(-777, 1297)
+
+[node name="Node2D4" parent="Node2D2/Node2D5/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(-3420, 502)
+scale = Vector2(60, 1)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(1122, -2803)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(-777, 1297)
+
+[node name="Node2D5" parent="Node2D2/Node2D5/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(567, -459)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(802, 1165)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D4" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D5" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D6" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D7" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(813, -2622)
+
+[node name="Node2D8" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2954, -2708)
+
+[node name="Node2D9" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(5437, 118)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D4" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D5" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D6" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D7" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(813, -2622)
+
+[node name="Node2D8" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2954, -2708)
+
+[node name="Node2D10" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(3858, 250)
+
+[node name="Node2D11" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(6794, 1521)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(-777, 1297)
+
+[node name="Node2D4" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(1122, -2803)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(-777, 1297)
+
+[node name="Node2D5" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(-4025, -993)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(802, 1165)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D4" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D5" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D6" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D7" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(813, -2622)
+
+[node name="Node2D8" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2954, -2708)
+
+[node name="Node2D9" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(5437, 118)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D4" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-544, -4025)
+
+[node name="Node2D5" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2123, -3893)
+
+[node name="Node2D6" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D7" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(813, -2622)
+
+[node name="Node2D8" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2/Node2D9" instance=ExtResource("2_eq2lk")]
+position = Vector2(-2954, -2708)
+
+[node name="Node2D10" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(3858, 250)
+
+[node name="Node2D11" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D2" instance=ExtResource("2_eq2lk")]
+position = Vector2(6794, 1521)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(-777, 1297)
+
+[node name="Node2D4" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(-263, 527)
+
+[node name="Node2D2" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(1122, -2803)
+
+[node name="Node2D3" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(-777, 1297)
+
+[node name="Node2D4" parent="Node2D2/Node2D5/Node2D5/Node2D5/Node2D5/Node2D5/Node2D4" instance=ExtResource("2_eq2lk")]
+position = Vector2(-1110, 507)
+
+[node name="Node2D5" parent="." instance=ExtResource("2_eq2lk")]
+position = Vector2(1834, -700)
+
+[node name="Node2D6" parent="." instance=ExtResource("2_eq2lk")]
+position = Vector2(2159, 2568)
+
+[node name="Node2D7" parent="." instance=ExtResource("2_eq2lk")]
+position = Vector2(-1608, 2482)
+
+[node name="Node2D8" parent="." instance=ExtResource("2_eq2lk")]
+position = Vector2(-3659, 270)
+
+[node name="Node2D9" parent="." instance=ExtResource("2_eq2lk")]
+position = Vector2(-2978, -1409)
+
+[node name="Node2D10" parent="." instance=ExtResource("2_eq2lk")]
+position = Vector2(-647, -1837)
+
+[node name="Node2D11" parent="." instance=ExtResource("2_eq2lk")]
+position = Vector2(-39041, 1604)
